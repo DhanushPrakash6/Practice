@@ -1,0 +1,50 @@
+body {
+    font-family: Poppins;
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    width: fit-content;
+    margin-left: 25%;
+    transition: transform 1s ease;
+}
+
+.box {
+    width: 15vw;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    /* transition: all 0.3s ease-in; */
+    transition: transform 0.5s ease, opacity 0.5s ease; 
+    opacity: 0.3;
+}
+
+.box h1 {
+    color: blue;
+    font-size: 30px;
+    transition: all 0.3s;
+}
+
+.box-inside {
+    display: flex;
+    column-gap: 10%;
+}
+
+.box-inside div{
+    writing-mode: vertical-lr;
+    font-size: larger;
+    color: rgb(244, 88, 88);
+    font-weight: 700;
+    transform: rotate(-180deg) translateY(15px);
+}

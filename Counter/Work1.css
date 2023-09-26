@@ -1,0 +1,32 @@
+body {   
+    font-family: 'Montserrat';
+    user-select: none;
+}
+h1 {
+    letter-spacing: 5px;
+    font-size: 15vh; 
+    font-weight: 1000;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.box {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 5vh;
+    letter-spacing: 3px;
+    padding: 5px;
+    height: fit-content;
+    width: fit-content;
+    border: 5px solid black;
+    border-radius: 3px;
+}
+
+.box:active {
+    border: 5px solid skyblue;
+}

@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.main-font {
+    font-family: Parisienne;
+    font-size: 6vh;
+    color: rgb(238, 207, 30);
+}
+
+.box {
+    font-family: Lato;
+    letter-spacing: 6px;
+    font-weight: 600;
+    background-color: white;
+    padding: 30px 50px;
+    font-size: large;
+    height: fit-content;
+    width: 50vw;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.box i {
+    margin-left: auto;
+    font-size: larger;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.toggle {
+    display: none;
+}
+
+.icon {
+    transition: all 0.3s;
+}

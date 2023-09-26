@@ -1,0 +1,66 @@
+body {
+    margin: 0; 
+    padding: 0;
+    background-image: url("Resources/BG.jpg");
+    object-fit: fill;
+    background-size: cover;
+    font-family: Poppins;
+    display: flex;
+    height: 100vh;
+    align-items: center; 
+    justify-content: center;
+}
+
+.container {
+    width: 25vw;
+    height: fit-content;
+    background-color: white;
+    padding: 8vh;
+    border-radius: 10px;
+}
+
+.font-size {
+    font-size: 4vh;
+    font-weight: 800;
+}
+
+.box input { 
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gray;
+    height: 38px;
+    width: 90%;
+    font-size: medium;
+    padding-left: 35px;
+}
+
+.box i {
+    position: absolute;
+    transform: translateX(10px) translateY(12px);
+    opacity: 0.5;
+}
+
+.box label {
+    display: inline;
+    position: absolute;
+    transform: translateY(-34px) translateX(35px);
+    pointer-events: none;
+    opacity: 0.5;
+    transition: all 0.5;
+}
+
+.button {
+    width: 100%;
+    height: fit-content;
+    margin-top: 5%;
+    display: flex;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: linear-gradient(45deg, #ff2929, #ff2eb9, #ffca2c, #9733fc);
+    padding: 10px 0px 10px 0px;
+    font-size: 2.5vh;
+    font-weight: 500;
+    cursor: pointer;
+}

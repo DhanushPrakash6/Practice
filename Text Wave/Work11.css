@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: rgb(33, 32, 32);
+}
+
+.container {
+    color: white;
+    text-transform: uppercase;
+}
+
+.container > span{
+    margin-left: 5px;
+}
+
+.container > span {
+    transition: all 0.3s;
+}
+
+.container > span > span {
+    display: inline-block;
+}
+
+.animation {
+    animation: move 0.3s;
+}
+
+.container:hover span{
+    animation-play-state: paused;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    } 
+    50% {
+        transform: translateY(-80px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

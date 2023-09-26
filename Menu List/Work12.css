@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: #252839
+}
+
+ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+ul li {
+    list-style: none;
+    position: relative;
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #fff2;
+    font-size: 3em;
+    letter-spacing: 0.25em;
+    line-height: 1.5em;
+    text-transform: capitalize;
+}
+
+ul li a::before {
+    content: attr(data-list);
+    position: absolute;
+    color: var(--r);
+    border-right: 6px solid var(--r);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+ul li a:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--r));
+}

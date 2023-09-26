@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Work5.css">
+    <script src="https://kit.fontawesome.com/fc6351a605.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Parisienne">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>Login</title>
+</head>
+<body>
+    <script type="module" src="Work5.js"></script>
+    <div style="display: flex; gap: 5%;">
+        <div class="container"> 
+            <div style="text-align: center;">
+                <span class="font-size">Login</span>
+            </div>
+            <div class="box" style="display: block; margin-top: 10%;">
+                    <span style="font-weight: 600;">Username</span>
+                    <div style="margin-top: 3%;">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" class="text" id="text-user-login" placeholder="Type your username">
+                    </div>
+            </div>
+            <div class="box" style="display: block; margin-top: 10%;">
+                <span style="font-weight: 600;">Password</span>
+                <div style="margin-top: 3%;">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="text" id="text-pass-login" placeholder="Type your password">
+            </div>
+            <div style="margin-top: 2%; margin-left: 60.5%; cursor: pointer;">
+                <span>Forgot Password?</span>
+            </div>    
+            <div class="button button-login">
+                <span>LOGIN</span> 
+            </div>
+            <p id="login-msg" style="text-align: center; color: red;"></p>
+            <div style="margin-top: 5%; text-align: center;">
+                <span>Don't Have an account?
+                    <a href="" style="text-decoration: none;" id="signup_button">Sign Up</a>
+                </span>
+            </div>
+        </div>
+        </div>
+
+        <div class="container">
+            <div style="text-align: center;">
+                <span class="font-size">Sign Up</span>
+            </div>
+            <div class="box" style="display: block; margin-top: 10%;">
+                    <span style="font-weight: 600;">Username</span>
+                    <div style="margin-top: 3%;">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" class="text" id="text-user-signup" placeholder="Type your username">
+                    </div>
+            </div>
+            <div class="box" style="display: block; margin-top: 10%;">
+                <span style="font-weight: 600;">Password</span>
+                <div style="margin-top: 3%;">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="text" id="text-pass-signup" placeholder="Type your password">
+            </div>
+            <div style="margin-top: 2%; margin-left: 60.5%; cursor: pointer;">
+                <span>Forgot Password?</span>
+            </div>    
+            <div class="button button-signup">
+                <span>SIGN UP</span>
+            </div>
+            <p id="signup-msg" style="text-align: center; color: green;"></p>
+            <div style="margin-top: 5%; text-align: center;">
+                <span>Already Have An Account -
+                    <a href="" style="text-decoration: none;" id="login_button">Login</a>
+                </span>
+            </div> 
+        </div>
+        </div>
+    </div>
+</body>
+</html>

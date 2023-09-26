@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Grotesque & Neo-grotesque";
+    font-size: 50px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: yellow;
+}
+
+#fancy {
+    transition: all 0.3;
+}
+
+body div {
+    line-height: 65px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#text:has(:hover) #fancy:not(:hover) {
+    opacity: 0.2;
+}
+
+#fancy {
+    display: flex;
+    justify-content: space-between;
+}
+
+#para > #letter {
+    display: inline-block;
+}
+
+#fancy {
+    transition: opacity 0.5s;
+}
+
+#para > #letter {
+    transition: transform 1s;
+}
+
+#fancy:hover #para > #letter:nth-child(1){
+    transform: translate(-30%, 20%) rotate(18deg);
+}
+
+#fancy:hover #para > #letter:nth-child(2){
+    transform: translate(-0%, -40%) rotate(-12deg);
+}
+
+#fancy:hover #para > #letter:nth-child(3){
+    transform: translate(-40%, 20%) rotate(-15deg);
+}
+
+#fancy:hover #para > #letter:nth-child(4){
+    transform: translate(-0%, -40%) rotate(18deg);
+}
+
+#fancy:hover #para > #letter:nth-child(5){
+    transform: translate(-50%, 20%) rotate(-12deg);
+}
+
+#fancy:hover #para > #letter:nth-child(6){
+    transform: translate(-0%, -40%) rotate(-12deg);
+}
+
+#fancy:hover #para > #letter:nth-child(7){
+    transform: translate(-10%, 20%) rotate(6deg);
+}
+
+#fancy:hover #para > #letter:nth-child(8){
+    transform: translate(-0%, -40%) rotate(-3deg);
+}
+
+#fancy:hover #para > #letter:nth-child(9){
+    transform: translate(-40%, 20%) rotate(-10deg);
+}
+
+#fancy:hover #para > #letter:nth-child(10){
+    transform: translate(-0%, -40%) rotate(-15deg);
+}
