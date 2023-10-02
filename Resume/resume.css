@@ -86,3 +86,18 @@ a:hover {
 a:visited {
     color: purple;
 }
+
+a {
+    font-size: small;
+    font-weight: 200;
+}
+
+.links img{
+    height: 50px;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+
+.links img:hover {
+    filter: grayscale(0%);
+}
