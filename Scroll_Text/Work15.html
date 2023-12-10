@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Text</title>
+    <link rel="stylesheet" href="Work15.css">
+</head>
+<body>
+    <h2 class="inner-text">WELCOME</h2>
+    <section>
+        <h2>WELCOME</h2>
+    </section>
+    <script>
+        let section = document.querySelector("section");
+        window.addEventListener('scroll', ()=>{
+            let value = window.scrollY;
+            section.style.clipPath = "circle(" + value * 2.2 + "px at left center"
+        })
+    </script>
+</body>
+</html>
